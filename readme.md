@@ -16,11 +16,11 @@ Startar containers i bakgrunden(detached)
 ```
 Stoppar och tar bort containers etc, för att sedan starta upp dem igen i detachedmode
 ```md
-docker-compose down && docker-compose up -d
+docker compose down && docker compose up -d
 ```
 Stoppar och tar bort containers etc, bygger sedan om containers och startar upp dem igen i detachedmode
 ```md
-docker-compose down && docker-compose build && docker-compose up -d
+docker compose down && docker compose build && docker compose up -d
 ```
 Raderar oanvända data inklusive containers, nätverk, images (både hängande och oanvända), samt alla oanvända volymer.
 ```md
@@ -28,7 +28,7 @@ docker system prune --volumes
 ```
  listar alla miljövariabler i containern
 ```md
-docker-compose exec web env
+docker compose exec web env
 ```
 Visar en lista över alla körande containers, inklusive information som container-id, image, skapelsestatus, och portar.
 ```md
